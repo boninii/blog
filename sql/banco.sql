@@ -4,7 +4,7 @@ create database blog;
 -- Selecionar banco de dados 
 use blog;
 
--- Criação da tabela usuario
+-- Criação da tabela usuari
 create table usuario (
 	id int not null auto_increment,
     nome varchar(50) not null,
