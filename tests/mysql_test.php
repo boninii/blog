@@ -20,7 +20,7 @@
     // Teste select banco de dados
     function buscar_teste() : void
     {
-        $usuarios = buscar('usuario', ['id','nome','email', [], '');
+        $usuarios = buscar('usuario', ['id','nome','email'], [], '');
         print_r($usuarios);
     }
 ?>
