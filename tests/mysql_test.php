@@ -5,7 +5,7 @@
     require_once '../core/sql.php';
     require_once '../core/mysql.php';
 
-    insert_teste('Pedro', 'pedro@ifsp.edu.br', '123456');
+    insert_teste('João', 'joão@ifsp.edu.br', '123456');
     buscar_teste();
     update_teste(38, 'murilo','silva@gmail.com');
     buscar_teste();
@@ -20,7 +20,15 @@
     // Teste select banco de dados
     function buscar_teste() : void
     {
-        $usuarios = buscar('usuario', ['id','nome','email'], [], '');
+        $usuarios = buscar('usuario', [ 'id','nome','email'],[],'');
         print_r($usuarios);
+    }
+
+    // Teste update banco de dados
+    function update_teste($id, $nome, $email) : void
+    {
+        $dados = ['nome' => $nome, 'email' => $email];
+        $criterio = [['id', '=', $id]];
+        atualiza('usuario',$dados,$criterio);
     }
 ?>
