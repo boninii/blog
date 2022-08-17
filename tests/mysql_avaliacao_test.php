@@ -7,18 +7,24 @@
     //insere dados
     insert_teste('João', 'joao@ifsp.edu.br', '123456');
     buscar_teste();
-    insert_teste2(1, 'Vai cortinas', 'Cortinas perdeu muito ruim kkk', '2022-05-08');
+    insert_teste2(2, 'Vai cortinas', 'Cortinas perdeu muito ruim kkk', '2022-05-08');
     buscar_teste2();
-    insert_teste3(1, 'fodido vou te assaltar', 1, 1);
+    insert_teste3(2, 'fodido vou te assaltar', 1, 1);
     buscar_teste3();
 
     //atualiza dados
-    update_teste(1, 'murilo', 'silva@gmail.com');
+    update_teste(2, 'murilo', 'silva@gmail.com');
     buscar_teste();
-    update_teste2(1, 'Parmeras', 'pulseras kkkkkkkkkkkkkkkkkkkkkkkkkkkk');
+    update_teste2(2, 'Parmeras', 'pulseras kkkkkkkkkkkkkkkkkkkkkkkkkkkk');
     buscar_teste2();
-    update_teste3(1, 10, 'vo come bosta');
+    update_teste3(2, 10, 'vo come bosta');
     buscar_teste3();
+
+    //delete dados
+    delete_teste3(2);
+    buscar_teste3();
+    delete_teste2(2);
+    buscar_teste2();
 
     //insert
     function insert_teste($nome, $email, $senha) : void {
@@ -65,4 +71,15 @@
         $criterio = [['id', '=', $id]];
         atualiza('avaliacao', $dados, $criterio);
     }
+
+    //delete
+    function delete_teste3($id) {
+        $criterio = [['id', '=', $id]];
+        deleta('avaliacao', $criterio);
+    }
+    function delete_teste2($id) {
+        $criterio = [['id', '=', $id]];
+        deleta('post', $criterio);
+    }
+
 ?>
