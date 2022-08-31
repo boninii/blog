@@ -43,3 +43,5 @@ create table avaliacao (
 );
 
 SELECT * FROM usuario;
+
+

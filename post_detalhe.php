@@ -65,6 +65,7 @@
                     <?php 
                         include 'includes/rodape.php';
                     ?>
+                    <button><a href="index.php">voltar</a></button>
                 </div>
             </div>
         </div>
