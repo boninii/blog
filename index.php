@@ -22,7 +22,7 @@
                             include 'includes/menu.php';
                         ?>
                     </div>
-                    <div class="col-md-10" style="padding-top: 50px;">
+                    <div class="col-md-12" style="padding-top: 50px;">
                         <!-- Conteúdo//-->
                         <h2>Página Inicial</h2>
                         <?php
