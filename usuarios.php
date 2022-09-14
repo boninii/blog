@@ -22,7 +22,7 @@
                 <div class="col-md-12">
                     <?php include 'includes/menu.php'; ?>
                 </div>
-                <div class="col-md-10" style="padding-top: 50px;">
+                <div class="col-md-12" style="padding-top: 50px;">
                     <h2>Usuário</h2>
                     <?php include 'includes/busca.php' ?>
                     <?php
@@ -80,10 +80,10 @@
                                 <td><?php echo $entidade['email'] ?></td>
                                 <td><?php echo $data ?></td>
                                 <td><a href='core/usuario_repositorio.php?acao=status&id=<?php echo $entidade['id']?>
-                                &valor=<?php echo !$entidade['ativo']?>'><?php ($entidade['ativo']==1) ? 
+                                &valor=<?php echo !$entidade['ativo']?>'><?php echo ($entidade['ativo']==1) ? 
                                 'Desativar' : 'Ativar'; ?></a></td>
                                 <td><a href='core/usuario_repositorio.php?acao=adm&id=<?php echo $entidade['id']?>
-                                &valor=<?php echo !$entidade['adm']?>'><?php ($entidade['adm']==1) ? 'Rebaixar'
+                                &valor=<?php echo !$entidade['adm']?>'><?php echo ($entidade['adm']==1) ? 'Rebaixar'
                                 : 'Promover'; ?></a></td>
                             </tr>
                             <?php endforeach; ?>
