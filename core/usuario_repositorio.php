@@ -106,13 +106,13 @@
                     ['id', '=', $id]
                 ];
 
-                atualiza (
+                atualiza (  
                     'usuario',
                     $dados,
                     $criterio
                 );
 
-                header('Locatio: ../usuarios.php');
+                header('Location: ../usuarios.php');
                 exit;
                 break;
     }
