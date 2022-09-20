@@ -60,12 +60,14 @@
                     </div>
                 </div>
             </div>
+            <div class="form-group">
+            <button class="btn btn-success" type="submit"><a href="index.php" style="color: white; text-decoration: none;">Voltar</a></button>
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <?php 
                         include 'includes/rodape.php';
                     ?>
-                    <button><a href="index.php">voltar</a></button>
                 </div>
             </div>
         </div>

@@ -40,7 +40,7 @@
                         $criterio = [];
 
                         if(!empty($busca)) {
-                            $criterio [] = ['nome', 'like', "%{busca}%"];
+                            $criterio [] = ['nome', 'like', "%{$busca}%"];
                         }
 
                         $result = buscar(

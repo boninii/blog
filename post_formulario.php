@@ -20,7 +20,7 @@
                 <div class="col-md-12">
                     <?php include 'includes/menu.php' ?>
                 </div>
-                <div class="col-md-10" style="padding-top: 50px;">
+                <div class="col-md-12" style="padding-top: 50px;">
                     <?php
                         require_once 'includes/funcoes.php';
                         require_once 'core/conexao_mysql.php';
@@ -61,10 +61,10 @@
                         </div>
                         <div class="form-group">
                             <label for="texto">Texto</label>
-                            <textarea class="form-control" type="text"
-                                    require="required" id="texto" name="texto" rows="5">
-                                <?php echo $entidade['texto'] ?? ''?>
-                            </textarea>
+<textarea class="form-control" type="text"
+        require="required" id="texto" name="texto" rows="5">
+<?php echo $entidade['texto'] ?? ''?>
+</textarea>
                         </div>
                         <div class="form-group">
                             <label for="texto">Postar em</label>
@@ -92,7 +92,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="text-right">
+                        <div class="text-">
                             <button class="btn btn-success"
                                     type="submit">Salvar</button>
                         </div>
