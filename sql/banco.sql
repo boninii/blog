@@ -42,7 +42,7 @@ create table avaliacao (
     constraint fk_avaliacao_post foreign key (post_id) references post (id)
 );
 
-SELECT * FROM post;
+SELECT * FROM usuario;
 
-insert into post (titulo, texto, usuario_id) values ("Curinga", "Curinga, ganhar, tatu, bola", 2);
+/* insert into post (titulo, texto, usuario_id) values ("Curinga", "Curinga, ganhar, tatu, bola", 2);*/
 

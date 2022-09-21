@@ -22,6 +22,12 @@
                 <a class="nav-link" href="usuarios.php">Usuários</a>
             </li>
             <?php endif; ?>
+            <!-- <?php 
+                if(isset($_SESSION['login'])) : ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="usuarios.php">opcao usuario logado</a>
+                </li>
+            <?php endif; ?>                  -->
         </ul>
     </div>
 </div>
